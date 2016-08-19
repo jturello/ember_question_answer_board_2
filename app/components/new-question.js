@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   displayNewForm: false,
   actions: {
-    questionFormShow() {
+    addQuestionFormShow() {
       this.set('displayNewForm', true);
     },
 
@@ -13,7 +13,6 @@ export default Ember.Component.extend({
         question: this.get('question') ? this.get('question'): "",
         notes: this.get('notes') ? this.get('notes') : "",
       };
-      // debugger;
       this.set('displayNewForm', false);
       this.sendAction('save', params);
     }

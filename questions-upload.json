@@ -1,0 +1,14 @@
+{ "questions": [{
+    "author": "Bridgekeeper",
+    "question": "What is your name?"
+  }, {
+    "author": "Bridgekeeper",
+    "question": "What is your quest?"
+  }, {
+    "author": "Bridgekeeper",
+    "question": "What is the average airspeed velocity of an unladen swallow?"
+  }, {
+    "author": "King Arthur",
+    "question": "What do you mean, an African or a European swallow?"
+    }]
+}

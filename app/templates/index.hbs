@@ -1,1 +1,7 @@
+<h2>Question List</h2>
 
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.author}}: {{question.question}}</li>
+  {{/each}}
+</ul>

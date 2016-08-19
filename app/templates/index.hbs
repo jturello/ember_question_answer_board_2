@@ -1,9 +1,9 @@
 <h2>Question List</h2>
 
+{{new-question save="save"}}
+
 <ul>
   {{#each model as |question|}}
     {{question-item question=question}}
   {{/each}}
 </ul>
-
-{{new-question save="save"}}

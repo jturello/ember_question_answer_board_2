@@ -1,1 +1,8 @@
+.text-red {
+  color: #c40808;
+}
 
+.margin-top-bottom {
+  /*margin-top: 5px;*/
+  margin-bottom: 10px;
+}

@@ -1,14 +1,18 @@
 { "questions": [{
     "author": "Bridgekeeper",
-    "question": "What is your name?"
+    "question": "What is your name?",
+    "notes": "Here's an additional note"
   }, {
     "author": "Bridgekeeper",
-    "question": "What is your quest?"
+    "question": "What is your quest?",
+    "notes": "Here's an additional note"
   }, {
     "author": "Bridgekeeper",
-    "question": "What is the average airspeed velocity of an unladen swallow?"
+    "question": "What is the average airspeed velocity of an unladen swallow?",
+    "notes": "More info here"
   }, {
     "author": "King Arthur",
-    "question": "What do you mean, an African or a European swallow?"
+    "question": "What do you mean, an African or a European swallow?",
+    "notes": ""
     }]
 }

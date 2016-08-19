@@ -2,6 +2,6 @@
 
 <ul>
   {{#each model as |question|}}
-     <li>{{question.author}}: {{question.question}}</li>
+    {{question-item question=question}}
   {{/each}}
 </ul>

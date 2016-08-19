@@ -1,4 +1,4 @@
-{{#if displayForm}}
+{{#if displayNewForm}}
 <h4>Add a New Question</h4>
 <div>
   <form>
@@ -14,9 +14,9 @@
       <label for="notes">Additional Notes</label>
       {{input value=notes id="notes"}}
     </div>
-    <button class="margin-top-bottom" {{action 'save'}}>Save</button>
+    <button class="margin-bottom-10px" {{action 'save'}}>Save</button>
   </form>
 </div>
 {{else}}
-  <button class="margin-top-bottom" {{action 'questionFormShow'}}>New Question</button>
+  <button class="margin-bottom-10px" {{action 'questionFormShow'}}>New Question</button>
 {{/if}}

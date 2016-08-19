@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  displayForm: false,
+  displayNewForm: false,
   actions: {
     questionFormShow() {
-      this.set('displayForm', true);
+      this.set('displayNewForm', true);
     },
 
     save() {
@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         notes: this.get('notes') ? this.get('notes') : "",
       };
       // debugger;
-      this.set('displayForm', false);
+      this.set('displayNewForm', false);
       this.sendAction('save', params);
     }
   }

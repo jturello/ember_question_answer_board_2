@@ -9,9 +9,7 @@ export default Ember.Route.extend({
     save(params) {
       debugger;
       var newQuestion = this.store.createRecord('question', params);
-      debugger;
       newQuestion.save();
-      debugger;
       this.transitionTo('index');
     },
 
@@ -23,7 +21,6 @@ export default Ember.Route.extend({
       });
       debugger;
       question.save();
-      // debugger;
       this.transitionTo('index');
     }
   }

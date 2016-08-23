@@ -1,1 +1,27 @@
-{{yield}}
+question-detail.hbs <br>
+<h2>Question detail page</h2>
+
+<div class="row">
+  <div class="col-sm-2">
+    Author:
+  </div>
+  <div class="col-sm-10">
+    {{model.author}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-2">
+    Question:
+  </div>
+  <div class="col-sm-10">
+    {{model.question}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-2">
+    Additional Notes:
+  </div>
+  <div class="col-sm-10">
+    {{model.notes}}
+  </div>
+</div>

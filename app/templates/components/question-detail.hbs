@@ -1,27 +1,31 @@
-question-detail.hbs <br>
+<div class="debug">question-detail.hbs</div>
+
+
 <h2>Question detail page</h2>
 
 <div class="row">
-  <div class="col-sm-2">
+  <div class="col-sm-1">
     Author:
   </div>
   <div class="col-sm-10">
-    {{model.author}}
+    {{question.author}}
   </div>
 </div>
 <div class="row">
-  <div class="col-sm-2">
+  <div class="col-sm-1">
     Question:
   </div>
   <div class="col-sm-10">
-    {{model.question}}
+    {{question.content}}
   </div>
 </div>
 <div class="row">
-  <div class="col-sm-2">
+  <div class="col-sm-1">
     Additional Notes:
   </div>
   <div class="col-sm-10">
-    {{model.notes}}
+    {{question.notes}}
   </div>
 </div>
+
+{{update-question question=model update="update"}}

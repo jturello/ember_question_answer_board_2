@@ -13,9 +13,8 @@ export default Ember.Component.extend({
         content: this.get('content'), // ? this.get('content'): "",
         notes: this.get('notes'), // ? this.get('notes') : "",
       };
-      // debugger;
       this.set('displayUpdateForm', false);
       this.sendAction('update', question, params);
     }
-  } 
+  }
 });

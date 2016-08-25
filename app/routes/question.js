@@ -12,7 +12,7 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      this.transitionTo('index');
+      this.transitionTo('question/params.question_id');
     },
     destroyQuestion(rental) {
       rental.destroyQuestion();

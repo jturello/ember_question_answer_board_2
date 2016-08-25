@@ -15,6 +15,11 @@ export default Ember.Component.extend({
       };
       this.set('displayNewForm', false);
       this.sendAction('save', params);
+
+      this.set('author', "");
+      this.set('content', "");
+      this.set('notes', "");
+
     }
   }
 });

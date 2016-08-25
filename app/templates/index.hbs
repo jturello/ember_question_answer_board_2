@@ -7,6 +7,6 @@
 
 <ul>
   {{#each model as |question|}}
-    {{#link-to 'question' question.id}}{{question-tile question=question update="update"}}{{/link-to}}
+    {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
   {{/each}}
 </ul>

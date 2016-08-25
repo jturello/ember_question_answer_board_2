@@ -17,5 +17,5 @@ export default Ember.Component.extend({
       this.set('displayUpdateForm', false);
       this.sendAction('update', question, params);
     }
-  }
+  } 
 });

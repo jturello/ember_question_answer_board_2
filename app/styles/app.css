@@ -1,3 +1,10 @@
+.debug {
+  color: #ee5d5d;
+  /*border-style: dashed;
+  border-width: thin;
+  border-color: grey;*/
+}
+
 .text-red {
   color: #c40808;
 }

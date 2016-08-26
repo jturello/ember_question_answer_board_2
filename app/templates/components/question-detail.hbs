@@ -29,3 +29,13 @@
 </div>
 
 {{update-question question=question update="update"}}
+
+<hr>
+
+<h3> Answers: </h3>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - ({{answer.author}})</li>
+  {{/each}}
+</ul>

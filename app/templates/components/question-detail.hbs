@@ -32,12 +32,12 @@
 
 <hr>
 
-<h3> Answers: </h3>
+{{new-answer addAnswer="addAnswer" question=question}}
+
+<h3 class=margin-top-5px> Answers: </h3>
 
 <ul>
   {{#each question.answers as |answer|}}
     <li>{{answer.content}} - ({{answer.author}})</li>
   {{/each}}
 </ul>
-
-{{new-answer addAnswer="addAnswer" question=question}}

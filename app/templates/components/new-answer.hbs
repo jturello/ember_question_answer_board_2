@@ -13,9 +13,9 @@
           {{input value=content id="content"}}
         </div>
 
-        <button {{action 'addAnswer'}} class="margin-bottom-10px">Save</button>
+        <button {{action 'addAnswer'}}">Save</button>
       </form>
     </div>
 {{else}}
-  <button {{action 'answerFormShow'}} class="margin-bottom-10px">New Answer</button>
+  <button {{action 'answerFormShow'}} class="margin-bottom--5px">Add New Answer</button>
 {{/if}}

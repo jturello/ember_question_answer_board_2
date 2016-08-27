@@ -1,18 +1,14 @@
 { "questions": [{
-    "author": "Bridgekeeper",
-    "content": "What is your name?",
-    "notes": "Here's an additional note"
-  }, {
-    "author": "Bridgekeeper",
-    "content": "What is your quest?",
-    "notes": "Here's an additional note"
-  }, {
-    "author": "Bridgekeeper",
-    "content": "What is the average airspeed velocity of an unladen swallow?",
-    "notes": "More info here"
-  }, {
-    "author": "King Arthur",
-    "content": "What do you mean, an African or a European swallow?",
-    "notes": ""
+      "author": "The Dalai Lama",
+      "content": "What is the meaning of a life well lived?",
+      "notes": "Here's an additional note",
+      "answers": {
+        "0" : true
+    }
+  }],
+
+  "answers": [{
+      "author" : "Mark Twain",
+      "content" : "You'll find your answer if you read my books!"
     }]
 }

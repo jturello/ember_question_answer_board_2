@@ -1,0 +1,21 @@
+<div class="debug">new-answer.hbs</div>
+
+{{#if addNewAnswer}}
+  <h3>Add New Answer</h3>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="author">Author</label>
+          {{input value=author id="author"}}
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          {{input value=content id="content"}}
+        </div>
+
+        <button {{action 'addAnswer'}} class="margin-bottom-10px">Save</button>
+      </form>
+    </div>
+{{else}}
+  <button {{action 'answerFormShow'}} class="margin-bottom-10px">New Answer</button>
+{{/if}}

@@ -1,10 +1,10 @@
 <div class="debug">question-detail.hbs</div>
 
 
-<h2>Question detail page</h2>
+<h3>Question detail page</h3>
 
 <div class="row">
-  <div class="col-sm-1">
+  <div class="col-sm-2">
     Author:
   </div>
   <div class="col-sm-10">
@@ -12,7 +12,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-sm-1">
+  <div class="col-sm-2">
     Question:
   </div>
   <div class="col-sm-10">
@@ -20,8 +20,8 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-sm-1">
-    Additional Notes:
+  <div class="col-sm-2">
+    Notes:
   </div>
   <div class="col-sm-10">
     {{question.notes}}
@@ -35,7 +35,9 @@
 <h3> Answers: </h3>
 
 <ul>
-  {{#each model.answers as |answer|}}
+  {{#each question.answers as |answer|}}
     <li>{{answer.content}} - ({{answer.author}})</li>
   {{/each}}
 </ul>
+
+{{new-answer addAnswer="addAnswer" question=question}}

@@ -2,11 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-      return Ember.RSVP.hash({
-        question: this.store.findRecord('question', params.question_id),
-        answers: this.store.findAll('answer')
-      });
+    return this.store.findRecord('question', params.question_id);
   },
+
   actions: {
     update(question, params) {
       Object.keys(params).forEach(function(key) {
@@ -15,10 +13,19 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      // debugger;
-      this.refresh();
-      // this.transitionTo('question');
+      this.transitionTo('question');
     },
+
+    addAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var question = params.question;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return question.save();
+        this.transitionTo('question', params.question.id);
+      });
+    },
+
     destroyQuestion(rental) {
       rental.destroyQuestion();
       this.transitionTo('index');

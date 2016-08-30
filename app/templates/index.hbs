@@ -3,10 +3,10 @@
 
 <h2>Question List</h2>
 
-{{new-question save="save"}}
-
 <ul>
   {{#each model as |question|}}
     {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
   {{/each}}
 </ul>
+
+{{new-question save="save"}}

@@ -8,10 +8,10 @@ module.exports = function(environment) {
     locationType: 'auto',
 
     firebase: {
-      apiKey: "AIzaSyDvRnUH8Ro9QnptcNT5algsMtfubno0j7A",
-      authDomain: "ember-question-answer-board.firebaseapp.com",
-      databaseURL: "https://ember-question-answer-board.firebaseio.com",
-      storageBucket: "ember-question-answer-board.appspot.com",
+      apiKey: "AIzaSyAPnjZWRHQsqf4e_E_ysBJKuaV1Uw6SAGA",
+      authDomain: "ember-question-answer-2.firebaseapp.com",
+      databaseURL: "https://ember-question-answer-2.firebaseio.com",
+      storageBucket: "ember-question-answer-2.appspot.com"
     },
 
     EmberENV: {

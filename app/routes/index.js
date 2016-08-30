@@ -7,7 +7,7 @@ export default Ember.Route.extend({
 
   actions: {
     save(params) {
-      if (!((params.author===undefined) || (params.author==="") || (params.content===undefined) || (params.content===""))) {
+      if (!((params.author===undefined) || (params.author==="") || (params.contents===undefined) || (params.contents===""))) {
         var newQuestion = this.store.createRecord('question', params);
         newQuestion.save();
         this.transitionTo('index');

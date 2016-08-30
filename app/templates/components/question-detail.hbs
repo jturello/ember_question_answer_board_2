@@ -16,7 +16,7 @@
     Question:
   </div>
   <div class="col-sm-10">
-    {{question.content}}
+    {{question.contents}}
   </div>
 </div>
 <div class="row">
@@ -36,8 +36,12 @@
 
 <ul>
   {{#each question.answers as |answer|}}
-    <li>{{answer.content}} - ({{answer.author}})</li>
+    <li>{{answer-tile answer=answer}}</li>
   {{/each}}
 </ul>
 
 {{new-answer addAnswer="addAnswer" question=question}}
+
+<hr>
+
+{{display-favorites item=item}}

@@ -10,14 +10,14 @@ export default Ember.Component.extend({
     save() {
       var params = {
         author: this.get('author') ? this.get('author') : "",
-        content: this.get('content') ? this.get('content'): "",
+        contents: this.get('contents') ? this.get('contents'): "",
         notes: this.get('notes') ? this.get('notes') : "",
       };
       this.set('displayNewForm', false);
       this.sendAction('save', params);
 
       this.set('author', "");
-      this.set('content', "");
+      this.set('contents', "");
       this.set('notes', "");
 
     }

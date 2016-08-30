@@ -1,6 +1,6 @@
 { "questions": [{
       "author": "The Dalai Lama",
-      "content": "What is the meaning of a life well lived?",
+      "contents": "What is the meaning of a life well lived?",
       "notes": "Here's an additional note",
       "answers": {
         "0" : true
@@ -9,6 +9,6 @@
 
   "answers": [{
       "author" : "Mark Twain",
-      "content" : "You'll find your answer if you read my books!"
+      "contents" : "You'll find your answer if you read my books!"
     }]
 }

@@ -17,7 +17,7 @@ export default Ember.Route.extend({
     },
 
     addAnswer(params) {
-      if (!((params.author===undefined) || (params.author==="") || (params.content===undefined) || (params.content===""))) {
+      if (!((params.author===undefined) || (params.author==="") || (params.contents===undefined) || (params.contents===""))) {
         var newAnswer = this.store.createRecord('answer', params);
         var question = params.question;
         question.get('answers').addObject(newAnswer);

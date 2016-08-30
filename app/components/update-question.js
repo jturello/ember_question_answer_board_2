@@ -10,12 +10,12 @@ export default Ember.Component.extend({
     update(question) {
       var params = {
         author: this.get('uAuthor'),
-        content: this.get('uContent'),
+        contents: this.get('uContents'),
         notes: this.get('notes'),
       };
       this.set('displayUpdateForm', false);
       this.set('uAuthor', "");
-      this.set('uContent', "");
+      this.set('uContents', "");
       this.set('notes', "");
       this.sendAction('update', question, params);
     }

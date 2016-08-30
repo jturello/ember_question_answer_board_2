@@ -1,0 +1,15 @@
+<div class="debug hidden">display-favorites.hbs</div>
+
+{{#if favoritesList.items}}<h2>Your Favorites</h2>{{/if}}
+
+
+<ul>
+  {{#each favoritesList.items as |item|}}
+    <li>
+      <li>Q: {{item.question.contents}} - (<span class="text-red">{{item.question.author}}</span>)</li>
+      <ul>
+        A: {{item.contents}} - (<span class="text-red">{{item.author}}</span>)
+      </ul>
+    </li>
+  {{/each}}
+</ul>

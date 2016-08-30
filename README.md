@@ -26,7 +26,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone this repository (https://github.com/jturello/ember_question_answer_board.git)
+* `git clone this repository (https://github.com/jturello/ember_question_answer_board_2.git)
 * change into the new directory
 * `npm install`
 * `bower install`

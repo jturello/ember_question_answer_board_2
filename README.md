@@ -1,6 +1,6 @@
 # Question-answer-board
 
-Epicodus Javascript week 3 code review - Ember
+Epicodus Javascript week 4 code review - Ember Extended
 
 #### Description/requirements: Continue developing the Question and Answer message board application.
 

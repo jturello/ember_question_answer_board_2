@@ -5,13 +5,10 @@ Epicodus Javascript week 4 code review - Ember Extended
 #### Description/requirements: Continue developing the Question and Answer message board application.
 
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Implement at least one computed property. Ideas:
-* Allow users to up-vote the answer they think is best, then sort answers by number of up-votes.
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Implement at least one computed property.
 * Or display the number of answers each question has with a computed property.
 ##### Add a helper. Possible Ideas:
-* Nicely-formatted timestamps on questions and/or answers,
-* a formatting change or special icon for questions with no answers,
-* or questions with large numbers of answers, * a formatting change or special icon for the answer with the most up-votes, etc.
+* On the question list on index page, add an icon next to questions with 4 or more answers
 ##### Integrate a service. Possible Ideas:
 * Allow users to create lists of favorite questions or answers to reference later.
 

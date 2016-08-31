@@ -1,6 +1,4 @@
 <div class="debug hidden">question-tile.hbs</div>
 
 
-<li>
-  <span class="text-red">{{question.author}}</span>: {{question.contents}} - ({{answerCount}})
-</li>
+  {{many-answers-icon question}} <span class="text-red">{{question.author}}</span>: {{question.contents}} - ({{answerCount}})

@@ -5,6 +5,8 @@ export default Ember.Route.extend({
     return this.store.findAll('question');
   },
 
+  favoritesList: Ember.inject.service(),
+
   actions: {
     save(params) {
       if (!((params.author===undefined) || (params.author==="") || (params.contents===undefined) || (params.contents===""))) {

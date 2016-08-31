@@ -5,7 +5,9 @@
 
 <ul>
   {{#each model as |question|}}
-    {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
+    <li>
+      {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
+    </li>
   {{/each}}
 </ul>
 

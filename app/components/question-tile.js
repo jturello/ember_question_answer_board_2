@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-  answerCount: Ember.computed('question', function() {
-    return Ember.String.htmlSafe("(" + 'question'.get('answers').get('length') + ")");
+  answerCount: Ember.computed('question.answers', function() {
+    return this.get('question').get('answers').get('length');
   }),
 
   actions: {

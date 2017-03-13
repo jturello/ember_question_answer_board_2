@@ -40,6 +40,10 @@ You will need the following software properly installed on your computer.
 * `ember build` (development)
 * `ember build --environment production` (production)
 
+## Known Bugs/Issues
+
+Unit and integration tests have not been created for this project. This has been added to the project backlog.
+
 #### *Useful Ember Links*:
 
 * [ember.js](http://emberjs.com/)
